@@ -1,0 +1,23 @@
+doctype html
+html(lang="en")
+    head
+        title Main Message Editor
+        script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js')
+        script(src='/scripts/main.js')
+        link(href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet")
+        link(rel="stylesheet" href="/styles/style.css")
+    body(ng-app="mainMessageEditor")
+        .msg-card
+            input#msg-title(placeholder="Enter title message....")
+            #msg-editor
+                div#editor-tools
+                    i.fa.fa-bold
+                    i.fa.fa-italic
+                    i.fa.fa-align-left
+                    i.fa.fa-file-image-o
+                    i.fa.fa-smile-o
+                    i.fa.fa-link
+                div(contenteditable)#msg-content
+            #msg-footer
+                .btn.blue Save
+                .btn.green Post

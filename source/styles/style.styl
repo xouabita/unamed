@@ -1,0 +1,85 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat)
+
+*:focus
+    outline 0
+*
+    margin 0
+    padding 0
+
+body
+    background #9ed7ea
+
+#msg-title
+    box-sizing border-box
+    border-radius 0
+    font-family Monsterrat
+    background-color #fff
+    color #444
+    text-align left
+    font-size 30px
+    line-height 30px
+    padding 10px
+    width 100%
+    border none
+    border-bottom solid 1px #f4f4f4
+    &::-webkit-input-placeholder
+        color: #bfbfbf
+
+.msg-card
+    width 100%
+    max-width 1000px
+    margin 100px auto
+    background white
+    box-shadow 0 0 4px darken(#9ed7ea, 10)
+
+#msg-editor
+    min-height 200px
+    height 100%
+    #editor-tools
+        display inline-block
+        width 40px
+        min-height inherit
+        height inherit
+        text-align center
+        background #f8f8f8
+        i
+            display block
+            margin-top 10px
+            font-size 20px
+            color #777
+            &:hover
+                cursor pointer
+                color #444
+
+    #msg-content
+        box-sizing border-box
+        display inline-block
+        font-size 20px
+        color #444
+        padding 10px
+        vertical-align top
+        min-height inherit
+        height inherit
+        width calc(100% - 52px)
+
+#msg-footer
+    text-align right
+    background #f8f8f8
+    padding-right 10px
+.btn
+    display inline-block
+    margin 5px 5px 5px 0
+    padding 5px 10px
+    border-radius 5px
+    &:hover
+        cursor pointer
+    &.blue
+        background #304d90
+        color #eee
+        &:hover
+            background darken(#304d90, 10)
+    &.green
+        background #31944b
+        color #eee
+        &:hover
+            background darken(#31944b, 10)
